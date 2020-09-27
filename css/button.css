@@ -21,6 +21,10 @@
 	vertical-align: middle;
 }
 
+.button:hover {
+	cursor: pointer;
+}
+
 /* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
 
 
