@@ -29,19 +29,6 @@
 			font-size: 20px;
 		}
 
-		.  {
-			display: none;
-		}
-
-		. .active {
-			display: block;
-		}
-
-		.list-group-item.active {
-			color: black;
-			font-weight: bold;
-		}
-
 		.pd-5 {
 			padding: 3rem;
 		}
@@ -61,23 +48,23 @@
 
 		<!-- Sidebar -->
 		<div class="bg-light border-right" id="sidebar-wrapper">
-			<div class="sidebar-heading">Questions:</div>
+			<div class="sidebar-heading"><b>Questions:</b></div>
 			<div class="list-group list-group-flush overflow-auto" style="height: 90vh;">
-				<a href="#q1" class="list-group-item list-group-item-action bg-light active">Question 1</a>
+				<a href="#q1" class="list-group-item list-group-item-action bg-light">Question 1</a>
 				<a href="#q2" class="list-group-item list-group-item-action bg-light">Question 2</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 3</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 4</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 5</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 6</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 7</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 8</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 9</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 10</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 11</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 12</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 13</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 14</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 15</a>
+				<a href="#q3" class="list-group-item list-group-item-action bg-light">Question 3</a>
+				<a href="#q4" class="list-group-item list-group-item-action bg-light">Question 4</a>
+				<a href="#q5" class="list-group-item list-group-item-action bg-light">Question 5</a>
+				<a href="#q6" class="list-group-item list-group-item-action bg-light">Question 6</a>
+				<a href="#q7" class="list-group-item list-group-item-action bg-light">Question 7</a>
+				<a href="#q8" class="list-group-item list-group-item-action bg-light">Question 8</a>
+				<a href="#q9" class="list-group-item list-group-item-action bg-light">Question 9</a>
+				<a href="#q10" class="list-group-item list-group-item-action bg-light">Question 10</a>
+				<a href="#q11" class="list-group-item list-group-item-action bg-light">Question 11</a>
+				<a href="#q12" class="list-group-item list-group-item-action bg-light">Question 12</a>
+				<a href="#q13" class="list-group-item list-group-item-action bg-light">Question 13</a>
+				<a href="#q14" class="list-group-item list-group-item-action bg-light">Question 14</a>
+				<a href="#q15" class="list-group-item list-group-item-action bg-light">Question 15</a>
 
 			</div>
 		</div>
@@ -86,7 +73,7 @@
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
 
-			<nav style="position: sticky;" class="navbar navbar-light bg-light border-bottom">
+			<nav class="navbar navbar-light bg-light border-bottom">
 				<button class="btn btn-primary" id="menu-toggle">Menu</button>
 				<div id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -639,15 +626,6 @@
 				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");
 			});
-		</script>
-		<script>
-			var ind = 0
-			$(".list-group-item").on("click", function () {
-				ind = $(".list-group-item").index(this)
-				var question_section = $(". ")
-				$(question_section[ind]).addClass("active").siblings().removeClass("active")
-				$(this).addClass("active").siblings().removeClass("active")
-			})
 		</script>
 		<script>
 			$('input[type=radio]').click(function () {
