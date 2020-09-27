@@ -15,9 +15,22 @@
         });
     </script>
     <style>
-        @media only screen and (max-width: 1000px){
+        textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 771px){
+            h3{
+                font-size: 2rem;
+            }
+            h4{
+                font-size: 1.8rem;
+            }
             .ques-label{
-                font-size: 35px;
+                font-size: 30px;
             }
             input[type=radio] {
                 width: 1.5em;
@@ -26,6 +39,19 @@
             .btn{
                 font-size: 3vw;
             }
+            textarea{
+                font-size: 16px;
+            }
+        }
+        .fa-lightbulb{
+            color: #4360b5;
+        }
+        .question-section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -40,7 +66,6 @@
                 <div class="three"></div>
             </div>
             <div class="top_menu">
-                <div class="logo"><i class="fas fa-lightbulb"></i></div>
                 <h3>Hi Tanya!</h3>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -136,7 +161,7 @@
         <div class="main_container">
             <div id="q1" class="container question-section">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 1:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 1:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -170,29 +195,14 @@
 
             <div id="q2" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 2:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 2:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
                     </div>
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label class="ques-label">A) Computer Styled Sections</label>
-                    </div>
 
                     <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label class="ques-label">B) Cascading Style Sheets</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label class="ques-label">C) Crazy Solid Shapes</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label class="ques-label">D) None of the above</label>
+                        <textarea type="text" rows="5" name="question-1-answers" id="question-1-answers-D"></textarea>
                     </div>
                     <div class="pt-2" style="display: inline-block;">
                         <button class="btn btn-primary">Previous</button>
@@ -204,7 +214,7 @@
 
             <div id="q3" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 3:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 3:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -238,7 +248,7 @@
 
             <div id="q4" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 4:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 4:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -272,7 +282,7 @@
 
             <div id="q5" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 5:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 5:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -306,7 +316,7 @@
 
             <div id="q6" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 6:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 6:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -340,29 +350,14 @@
 
             <div id="q7" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 7:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 7:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
                     </div>
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label class="ques-label">A) Computer Styled Sections</label>
-                    </div>
 
                     <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label class="ques-label">B) Cascading Style Sheets</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label class="ques-label">C) Crazy Solid Shapes</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label class="ques-label">D) None of the above</label>
+                        <textarea type="text" rows="5" name="question-1-answers" id="question-1-answers-D"></textarea>
                     </div>
                     <div class="pt-2" style="display: inline-block;">
                         <button class="btn btn-primary">Previous</button>
@@ -374,7 +369,7 @@
 
             <div id="q8" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 8:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 8:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -408,7 +403,7 @@
 
             <div id="q9" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 9:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 9:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -442,7 +437,7 @@
 
             <div id="q10" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 10:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 10:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -476,7 +471,7 @@
 
             <div id="q11" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 11:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 11:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -510,7 +505,7 @@
 
             <div id="q12" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 12:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 12:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -544,7 +539,7 @@
 
             <div id="q13" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 13:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 13:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
@@ -578,29 +573,18 @@
 
             <div id="q14" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 14:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 14:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
                     </div>
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label class="ques-label">A) Computer Styled Sections</label>
+                    <div>
+                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+                            impedit laboriosam libero ullam dignissimos eos iusto.</h4>
                     </div>
 
                     <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label class="ques-label">B) Cascading Style Sheets</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label class="ques-label">C) Crazy Solid Shapes</label>
-                    </div>
-
-                    <div class="ques">
-                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label class="ques-label">D) None of the above</label>
+                        <textarea type="text" rows="5" name="question-1-answers" id="question-1-answers-D"></textarea>
                     </div>
                     <div class="pt-2" style="display: inline-block;">
                         <button class="btn btn-primary">Previous</button>
@@ -612,7 +596,7 @@
 
             <div id="q15" class="container question-section ">
                 <div class="pd-5">
-                    <h3 class="mt-4">Question 15:</h3>
+                    <h3 class="mt-4"><i class="fas fa-lightbulb"></i>&nbsp Question 15:</h3>
                     <div>
                         <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
                             impedit laboriosam libero ullam dignissimos eos iusto.</h4>
