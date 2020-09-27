@@ -17,14 +17,6 @@
 	<link href="css/simple-sidebar.css" rel="stylesheet">
 
 	<style>
-		.  {
-			height: 90vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-		}
-
 		label {
 			font-size: 20px;
 		}
@@ -73,37 +65,39 @@
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
 
-			<nav class="navbar navbar-light bg-light border-bottom">
-				<button class="btn btn-primary" id="menu-toggle">Menu</button>
-				<div id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-						<li class="nav-item active">
-							<h3 id="demo"></h3>
-						</li>
-					</ul>
-					<script> 
-						var deadline = new Date("Sept 28, 2020 15:37:25").getTime(); 
-						var x = setInterval(function() { 
-						var now = new Date().getTime(); 
-						var t = deadline - now; 
-						var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
-						var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
-						var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
-						var seconds = Math.floor((t % (1000 * 60)) / 1000); 
-						if (hours < "10") { hours = "0" + hours; }
-                        if (minutes < "10") { minutes = "0" + minutes; }
-                        if (seconds < "10") { seconds = "0" + seconds; }
-						document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds; 
-							if (t < 0) { 
-								clearInterval(x); 
-								document.getElementById("demo").innerHTML = "EXPIRED"; 
-							} 
-						}, 1000); 
-					</script> 
+			<nav class="navbar navbar-light bg-light border-bottom" style="position: sticky; width: 100%;">
+				<div class="container">
+					<button class="btn btn-primary" id="menu-toggle">Menu</button>
+					<div id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<h3 id="demo"></h3>
+							</li>
+						</ul>
+						<script> 
+							var deadline = new Date("Sept 28, 2020 15:37:25").getTime(); 
+							var x = setInterval(function() { 
+							var now = new Date().getTime(); 
+							var t = deadline - now; 
+							var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+							var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+							var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+							var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+							if (hours < "10") { hours = "0" + hours; }
+							if (minutes < "10") { minutes = "0" + minutes; }
+							if (seconds < "10") { seconds = "0" + seconds; }
+							document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds; 
+								if (t < 0) { 
+									clearInterval(x); 
+									document.getElementById("demo").innerHTML = "EXPIRED"; 
+								} 
+							}, 1000); 
+						</script> 
+					</div>
 				</div>
 			</nav>
 
-			<div id="q1" class="container   active">
+			<div id="q1" class="container">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 1:</h3>
 					<div>
