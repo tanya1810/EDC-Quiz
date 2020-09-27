@@ -17,7 +17,7 @@
 	<link href="css/simple-sidebar.css" rel="stylesheet">
 
 	<style>
-		.question-section {
+		.  {
 			height: 90vh;
 			display: flex;
 			justify-content: center;
@@ -27,19 +27,6 @@
 
 		label {
 			font-size: 20px;
-		}
-
-		.question-section {
-			display: none;
-		}
-
-		.question-section.active {
-			display: block;
-		}
-
-		.list-group-item.active {
-			color: black;
-			font-weight: bold;
 		}
 
 		.pd-5 {
@@ -61,23 +48,23 @@
 
 		<!-- Sidebar -->
 		<div class="bg-light border-right" id="sidebar-wrapper">
-			<div class="sidebar-heading">Questions:</div>
+			<div class="sidebar-heading"><b>Questions:</b></div>
 			<div class="list-group list-group-flush overflow-auto" style="height: 90vh;">
-				<a href="#" class="list-group-item list-group-item-action bg-light active">Question 1</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 2</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 3</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 4</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 5</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 6</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 7</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 8</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 9</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 10</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 11</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 12</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 13</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 14</a>
-				<a href="#" class="list-group-item list-group-item-action bg-light">Question 15</a>
+				<a href="#q1" class="list-group-item list-group-item-action bg-light">Question 1</a>
+				<a href="#q2" class="list-group-item list-group-item-action bg-light">Question 2</a>
+				<a href="#q3" class="list-group-item list-group-item-action bg-light">Question 3</a>
+				<a href="#q4" class="list-group-item list-group-item-action bg-light">Question 4</a>
+				<a href="#q5" class="list-group-item list-group-item-action bg-light">Question 5</a>
+				<a href="#q6" class="list-group-item list-group-item-action bg-light">Question 6</a>
+				<a href="#q7" class="list-group-item list-group-item-action bg-light">Question 7</a>
+				<a href="#q8" class="list-group-item list-group-item-action bg-light">Question 8</a>
+				<a href="#q9" class="list-group-item list-group-item-action bg-light">Question 9</a>
+				<a href="#q10" class="list-group-item list-group-item-action bg-light">Question 10</a>
+				<a href="#q11" class="list-group-item list-group-item-action bg-light">Question 11</a>
+				<a href="#q12" class="list-group-item list-group-item-action bg-light">Question 12</a>
+				<a href="#q13" class="list-group-item list-group-item-action bg-light">Question 13</a>
+				<a href="#q14" class="list-group-item list-group-item-action bg-light">Question 14</a>
+				<a href="#q15" class="list-group-item list-group-item-action bg-light">Question 15</a>
 
 			</div>
 		</div>
@@ -86,18 +73,37 @@
 		<!-- Page Content -->
 		<div id="page-content-wrapper">
 
-			<nav style="position: sticky;" class="navbar navbar-light bg-light border-bottom">
+			<nav class="navbar navbar-light bg-light border-bottom">
 				<button class="btn btn-primary" id="menu-toggle">Menu</button>
 				<div id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 						<li class="nav-item active">
-							<h3>14:59</h3>
+							<h3 id="demo"></h3>
 						</li>
 					</ul>
+					<script> 
+						var deadline = new Date("Sept 28, 2020 15:37:25").getTime(); 
+						var x = setInterval(function() { 
+						var now = new Date().getTime(); 
+						var t = deadline - now; 
+						var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+						var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+						var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+						var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+						if (hours < "10") { hours = "0" + hours; }
+                        if (minutes < "10") { minutes = "0" + minutes; }
+                        if (seconds < "10") { seconds = "0" + seconds; }
+						document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds; 
+							if (t < 0) { 
+								clearInterval(x); 
+								document.getElementById("demo").innerHTML = "EXPIRED"; 
+							} 
+						}, 1000); 
+					</script> 
 				</div>
 			</nav>
 
-			<div id="q1" class="container question-section active">
+			<div id="q1" class="container   active">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 1:</h3>
 					<div>
@@ -131,7 +137,7 @@
 			</div>
 
 
-			<div id="q2" class="container question-section">
+			<div id="q2" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 2:</h3>
 					<div>
@@ -165,7 +171,7 @@
 			</div>
 
 
-			<div id="q3" class="container question-section">
+			<div id="q3" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 3:</h3>
 					<div>
@@ -199,7 +205,7 @@
 			</div>
 
 
-			<div id="q4" class="container question-section">
+			<div id="q4" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 4:</h3>
 					<div>
@@ -233,7 +239,7 @@
 			</div>
 
 
-			<div id="q5" class="container question-section">
+			<div id="q5" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 5:</h3>
 					<div>
@@ -267,7 +273,7 @@
 			</div>
 
 
-			<div id="q6" class="container question-section">
+			<div id="q6" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 6:</h3>
 					<div>
@@ -301,7 +307,7 @@
 			</div>
 
 
-			<div id="q7" class="container question-section">
+			<div id="q7" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 7:</h3>
 					<div>
@@ -335,7 +341,7 @@
 			</div>
 
 
-			<div id="q8" class="container question-section">
+			<div id="q8" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 8:</h3>
 					<div>
@@ -369,7 +375,7 @@
 			</div>
 
 
-			<div id="q9" class="container question-section">
+			<div id="q9" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 9:</h3>
 					<div>
@@ -403,7 +409,7 @@
 			</div>
 
 
-			<div id="q10" class="container question-section">
+			<div id="q10" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 10:</h3>
 					<div>
@@ -437,7 +443,7 @@
 			</div>
 
 
-			<div id="q11" class="container question-section">
+			<div id="q11" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 11:</h3>
 					<div>
@@ -471,7 +477,7 @@
 			</div>
 
 
-			<div id="q12" class="container question-section">
+			<div id="q12" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 12:</h3>
 					<div>
@@ -505,7 +511,7 @@
 			</div>
 
 
-			<div id="q13" class="container question-section">
+			<div id="q13" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 13:</h3>
 					<div>
@@ -539,7 +545,7 @@
 			</div>
 
 
-			<div id="q14" class="container question-section">
+			<div id="q14" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 14:</h3>
 					<div>
@@ -573,7 +579,7 @@
 			</div>
 
 
-			<div id="q15" class="container question-section">
+			<div id="q15" class="container  ">
 				<div class="pd-5">
 					<h3 class="mt-4">Question 15:</h3>
 					<div>
@@ -620,15 +626,6 @@
 				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");
 			});
-		</script>
-		<script>
-			var ind = 0
-			$(".list-group-item").on("click", function () {
-				ind = $(".list-group-item").index(this)
-				var question_section = $(".question-section")
-				$(question_section[ind]).addClass("active").siblings().removeClass("active")
-				$(this).addClass("active").siblings().removeClass("active")
-			})
 		</script>
 		<script>
 			$('input[type=radio]').click(function () {
