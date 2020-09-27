@@ -20,8 +20,11 @@
 	<style type="text/css">
 		body {
 			font-family: 'Montserrat', sans-serif;
-			background-color: #faefdc !important;
-			color: #37474F;
+            background-color: #1b272e !important;
+            /*background-image: url('./images/thankyou.png') !important;*/
+            background-repeat:no-repeat;  
+            background-size: cover; 
+/**/			color: #37474F;
 		}
 	</style>
     <link rel="stylesheet" href="style.css">
@@ -42,6 +45,7 @@
             }
             ul {
                 font-size: 20px !important;
+                padding-left: 10px;
             }
         }
     </style>
@@ -56,79 +60,65 @@
                     <img src="images/EDC-BLACK.png" height="50px" width="50px">
                     <!-- <i class="fas fa-lightbulb"></i> -->
                 </div>
+                <div></div>
                 <h3>Hi Nishant🙂!</h3>
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <h3 id="demo" style="width: 100px;"></h3>
-                    </li>
-                </ul>
-                <script>
-                    var deadline = new Date("Sept 28, 2020 15:37:25").getTime();
-                    var x = setInterval(function () {
-                        var now = new Date().getTime();
-                        var t = deadline - now;
-                        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-                        if (hours < "10") { hours = "0" + hours; }
-                        if (minutes < "10") { minutes = "0" + minutes; }
-                        if (seconds < "10") { seconds = "0" + seconds; }
-                        document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds;
-                        if (t < 0) {
-                            clearInterval(x);
-                            document.getElementById("demo").innerHTML = "EXPIRED";
-                        }
-                    }, 1000); 
-                </script>
+
             </div>
         </div>
     </div>
-	<section class="pt100 pb100" style="margin-top: 150px;">
-            <div class="container" style="margin-top: -50px;">
+	<section class="pt100 pb100" style="margin-top: 130px;">
+            <div class="container" style="margin-top: -50px; min-height: 72vh">
 
-                <div class="row justify-content-center" style="padding: 5% !important;">
+                <div class="row justify-content-center" style=" padding: 5% !important;">
                     <div class="col-lg" style="width: 100%;">
                         <div class="icon_box_two">
                             <div style="text-align: justify;">
                                 <p style="padding-top: 1px; padding-left: 50px !important; padding-right: 50px; text-align: justify; font-size:20px; color: #000;">
                                     <center>
-                                    	<h3 class="instructions" style="color: black; font-weight: 900; text-align: center;">INSTRUCTIONS</h3>
+                                    	<h3 class="instructions" style="color: #aeebe7; font-weight: 900; text-align: center;">INSTRUCTIONS</h3>
                                     </center>
                                     <br><br><br>
-                                    <ul style="font-size: 25px;
-                                                    color: black;
-                                                    line-height: 30px;
-                                                    letter-spacing: 1px;
-                                                    list-style-type: circle !important;">
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet,  adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                    </ul>
+                                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                        <ul style="font-size: 25px;
+                                                        color: #aeebe7;
+                                                        line-height: 30px;
+                                                        letter-spacing: 1px;
+                                                        list-style-type: circle !important;">
+                                            <li style="list-style-type: disc !important;">The following aptitude test consists of 15 questions.</li>
+                                            <li style="list-style-type: disc !important;">You have to answer the questions present within the allotted time of 20 minutes.</li>
+                                            <li style="list-style-type: disc !important;">There is no negative marking for wrong answers.</li>
+                                            <li style="list-style-type: disc !important;">You can only appear once for this test.</li>
+                                            <li style="list-style-type: disc !important;">Any errors caused due to network failures are not the responsibility of EDC, TIET.</li>
+                                        </ul>
                                     <br>
                                     <p style="font-size: 25px;
-                                                    color: black;
+                                                    color: #aeebe7;
                                                     line-height: 30px;
                                                     letter-spacing: 1px;">If there are any technical issues feel free to mail us at <span style="font-weight: 600;"> recruitments@edctiet.com</span>
                                   	</p>
+                                                                        </div>
+
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <center>
 	            <section class="content yobject-marked">
 					<div class="box bg-1">
-						<button class="button button--ujarak button--border-thin button--text-thick">Start Test</button>
+						<button class="button button--ujarak button--border-thin button--text-thick" style="font-size: 15px;">Start Test</button>
 					</div>
 				</section>
             </center>
-
+       
+            <div style="display: flex; flex-direction: row; justify-content: flex-end; margin-top: 50px; width: 100%; background-color: black !important;" >
+                <div style="padding: 5px;"><a href="https://www.instagram.com/edc_tiet/">
+                    <i class="fab fa-instagram" style="color: white; font-size: 50px;"></i></a></div>
+                <div style="padding: 5px;"><a href="https://www.facebook.com/edctiet/">
+                    <i class="fab fa-facebook-f" style="color: white; font-size: 50px;"></i></a></div>
+                <div style="padding: 5px;"><a href="https://www.linkedin.com/school/entrepreneurship-development-cell-thapar-university/">
+                    <i style="color: white; font-size: 50px;" class="fab fa-linkedin-in"></i></div>   
 
         </section>
 </body>
