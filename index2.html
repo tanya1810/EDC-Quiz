@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>EDC- Recruitment Quiz</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+
+	<style>
+		label {
+			font-size: 20px;
+		}
+
+		.pd-5 {
+			padding: 3rem;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.pd-5 {
+				padding: 1.5rem !important;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="d-flex" id="wrapper">
+
+		<!-- Sidebar -->
+		<div class="bg-light border-right" id="sidebar-wrapper">
+			<div class="sidebar-heading"><b>Questions:</b></div>
+			<div class="list-group list-group-flush overflow-auto" style="height: 90vh;">
+				<a href="#q1" class="list-group-item list-group-item-action bg-light">Question 1</a>
+				<a href="#q2" class="list-group-item list-group-item-action bg-light">Question 2</a>
+				<a href="#q3" class="list-group-item list-group-item-action bg-light">Question 3</a>
+				<a href="#q4" class="list-group-item list-group-item-action bg-light">Question 4</a>
+				<a href="#q5" class="list-group-item list-group-item-action bg-light">Question 5</a>
+				<a href="#q6" class="list-group-item list-group-item-action bg-light">Question 6</a>
+				<a href="#q7" class="list-group-item list-group-item-action bg-light">Question 7</a>
+				<a href="#q8" class="list-group-item list-group-item-action bg-light">Question 8</a>
+				<a href="#q9" class="list-group-item list-group-item-action bg-light">Question 9</a>
+				<a href="#q10" class="list-group-item list-group-item-action bg-light">Question 10</a>
+				<a href="#q11" class="list-group-item list-group-item-action bg-light">Question 11</a>
+				<a href="#q12" class="list-group-item list-group-item-action bg-light">Question 12</a>
+				<a href="#q13" class="list-group-item list-group-item-action bg-light">Question 13</a>
+				<a href="#q14" class="list-group-item list-group-item-action bg-light">Question 14</a>
+				<a href="#q15" class="list-group-item list-group-item-action bg-light">Question 15</a>
+
+			</div>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+
+			<nav class="navbar navbar-light bg-light border-bottom" style="position: sticky; width: 100%;">
+				<div class="container">
+					<button class="btn btn-primary" id="menu-toggle">Menu</button>
+					<div id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<h3 id="demo"></h3>
+							</li>
+						</ul>
+						<script> 
+							var deadline = new Date("Sept 28, 2020 15:37:25").getTime(); 
+							var x = setInterval(function() { 
+							var now = new Date().getTime(); 
+							var t = deadline - now; 
+							var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+							var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+							var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+							var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+							if (hours < "10") { hours = "0" + hours; }
+							if (minutes < "10") { minutes = "0" + minutes; }
+							if (seconds < "10") { seconds = "0" + seconds; }
+							document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds; 
+								if (t < 0) { 
+									clearInterval(x); 
+									document.getElementById("demo").innerHTML = "EXPIRED"; 
+								} 
+							}, 1000); 
+						</script> 
+					</div>
+				</div>
+			</nav>
+
+			<div id="q1" class="container">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 1:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q2" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 2:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q3" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 3:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q4" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 4:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q5" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 5:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q6" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 6:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q7" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 7:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q8" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 8:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q9" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 9:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q10" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 10:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q11" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 11:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q12" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 12:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q13" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 13:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q14" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 14:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="q15" class="container  ">
+				<div class="pd-5">
+					<h3 class="mt-4">Question 15:</h3>
+					<div>
+						<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt maxime ut quia inventore
+							impedit laboriosam libero ullam dignissimos eos iusto.</h4>
+					</div>
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+						<label>A) Computer Styled Sections</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+						<label>B) Cascading Style Sheets</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+						<label>C) Crazy Solid Shapes</label>
+					</div>
+
+					<div>
+						<input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+						<label>D) None of the above</label>
+					</div>
+					<div class="pt-2" style="display: inline-block;">
+						<button class="btn btn-primary">Previous</button>
+						<button class="btn btn-primary">Next</button>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
+
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Menu Toggle Script -->
+		<script>
+			$("#menu-toggle").click(function (e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+		</script>
+		<script>
+			$('input[type=radio]').click(function () {
+				if (this.previous) {
+					this.checked = false;
+				}
+				this.previous = this.checked;
+			});
+		</script>
+
+</body>
+
+</html>
