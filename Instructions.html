@@ -27,12 +27,28 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+    <style type="text/css">
+        .instructions {
+            font-size: 60px;
+        }
+        @media (max-width: 700px) {
+            .instructions {
+                font-size: 50px;
+            }
+        }
+        @media (max-width: 450px) {
+            .instructions {
+                font-size: 40px;
+            }
+            ul {
+                font-size: 20px !important;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-    <br><br>
 <div class="wrapper">
 	<div class="top_navbar">
             <div class="top_menu" style="  width: 100%;">
@@ -43,7 +59,7 @@
                 <h3>Hi Nishant🙂!</h3>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <h3 id="demo"></h3>
+                        <h3 id="demo" style="width: 100px;"></h3>
                     </li>
                 </ul>
                 <script>
@@ -68,7 +84,7 @@
             </div>
         </div>
     </div>
-	<section class="pt100 pb100">
+	<section class="pt100 pb100" style="margin-top: 150px;">
             <div class="container" style="margin-top: -50px;">
 
                 <div class="row justify-content-center" style="padding: 5% !important;">
@@ -77,24 +93,25 @@
                             <div style="text-align: justify;">
                                 <p style="padding-top: 1px; padding-left: 50px !important; padding-right: 50px; text-align: justify; font-size:20px; color: #000;">
                                     <center>
-                                    	<h3 style="font-size: 50px !important;color: black; font-weight: 900;">INSTRUCTIONS</h3>
+                                    	<h3 class="instructions" style="color: black; font-weight: 900; text-align: center;">INSTRUCTIONS</h3>
                                     </center>
                                     <br><br><br>
-                                    <ul style="font-size: 20px;
+                                    <ul style="font-size: 25px;
                                                     color: black;
                                                     line-height: 30px;
                                                     letter-spacing: 1px;
-                                                    list-style: disc;">
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                                    list-style-type: circle !important;">
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet,  adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
+                                        <li style="list-style-type: disc !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut.</li>
                                     </ul>
-                                    <p style="font-size: 20px;
+                                    <br>
+                                    <p style="font-size: 25px;
                                                     color: black;
                                                     line-height: 30px;
                                                     letter-spacing: 1px;">If there are any technical issues feel free to mail us at <span style="font-weight: 600;"> recruitments@edctiet.com</span>
