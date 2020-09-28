@@ -21,17 +21,18 @@
 
   <script src="js/script.js"></script>
 </head>
-
+<img class="ImageLogo col-sm-6 col-lg-3"src="EDCWHITE_1.png" alt="">
 <body class="bodyMade ">
 
 
-  <div class="container col-sm-6 col-lg-3">
 
-        <div class="edc-front"></div>
-        <div class="edc-back"></div>
-  </div>
+
   <div class="login-page2 row">
-    <h1 class="Heading">Login</h1>
+
+    <div class="card h-200  text-white bg-dark mb-3 rounded-lg shadow lg p-3 mb-5  rounded" style="width: 125%;margin-top:20rem;border-radius:5px;">
+      <h1 class="Heading">Login</h1>
+
+  <div class="card-body" style="width:15rem; margin-top:20px;">
     <form class="" action="/LogIn" method="post">
     <div class="textbox2 ">
 
@@ -40,15 +41,18 @@
     </div>
     <div class="textbox2">
       <i class="fa fa-lock" aria-hidden="true"></i>
-      <input type="text" id="pass" placeholder="Roll No." name="rollno">
+      <input type="text" id="pass" placeholder="Application/Roll No." name="rollno">
     </div>
     <div class="textbox2">
       <i class="fa fa-lock" aria-hidden="true"></i>
       <input type="password" id="pass" placeholder="Pass-Key" name="passkey">
     </div>
 
-    <button id="btn2" onclick="buttonclick()"><span>Submit</span></button>
+    <button id="btn2" onclick="buttonclick()"><span>Log In</span></button>
     </form>
+  </div>
+</div>
+
 
   </div>
 
@@ -66,4 +70,3 @@
 </body>
 
 </html>
-
