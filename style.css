@@ -211,7 +211,7 @@ h3, h4{
     padding: .375rem .75rem;
     font-size: 1.5vw;
     line-height: 1.5;
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn-primary {
@@ -220,11 +220,11 @@ h3, h4{
     background-color: #7aaba8;
     border-color: #7aaba8;
     outline: none;
-    box-shadow: 0 2px 25px rgba(122, 171, 168, 2);
+    box-shadow: 0 8px 15px rgba(122, 171, 168, 0.2);
 }
 
 .btn-primary:hover{
-    background-color: #92a6e2;
-    border-color: #92a6e2;
-    box-shadow: 0 2px 25px rgba(146, 166, 226, 3);
+    background-color: #afe0dd;
+    border-color: #afe0dd;
+    box-shadow: 0 8px 15px rgba(146, 166, 226, 0.2);
 }
