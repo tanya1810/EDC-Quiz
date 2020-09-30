@@ -35,34 +35,34 @@ $ git clone https://github.com/tanya1810/EDC-Quiz.git
 If you're unfamiliar with the quiz, the rules are very simple,
 
 -   User has to login with his/her credentials
-    > Email Id
-    > Application/ Role Number
-    > Pass-Key
+    > 1. Email Id
+    > 2. Application/ Role Number
+    > 3. Pass-Key
 -   Then navigated to Instructions page, there you can find do's and dont's
-    > Number of questions.
-    > Duration of the Quiz.
-    > Marked allocation.
-    > Number of Attempts.
-    > If there is any errors caused in between whom should we contact?
+    > 1. Number of questions.
+    > 2. Duration of the Quiz.
+    > 3. Marked allocation.
+    > 4. Number of Attempts.
+    > 5. If there is any errors caused in between whom should we contact?
 -   Later you will be redirected to Quiz Page
-    > There you can see side navigation bar consists of question numbers for navigation between questions
-    > If you want to toggle the navbar, you can click on the menu icon(3 parallel lines)
-    > You can see the questions and options on the right side of the page
-    > You can scroll down/up the page to navigate to next/previous question
-    > You can see Previous/ Next button to navigate
+    > 1. There you can see side navigation bar consists of question numbers for navigation between questions
+    > 2. If you want to toggle the navbar, you can click on the menu icon(3 parallel lines)
+    > 3. You can see the questions and options on the right side of the page
+    > 4. You can scroll down/up the page to navigate to next/previous question
+    > 5. You can see Previous/ Next button to navigate
 -   After attempting all the questions, you can find submit button
 -   Thereafter you will redirected to Thank you page Saying ✨***"Congratulations!!! You Have Successfully Completed The Test.🎉"***
 
 ### Screenshots of The Project:
 
 1. Login Page
-![Login page](https://github.com/tanya1810/EDC-Quiz/blob/master/images/screens/loginPage.png)
+![Login page](https://github.com/UshasriMavuri1999/EDC-Quiz/blob/master/images/screens/loginPage.png)
 2. Instructions Page
-![Instructions Page](https://github.com/tanya1810/EDC-Quiz/blob/master/images/screens/instructionsPage.png)
+![Instructions Page](https://github.com/UshasriMavuri1999/EDC-Quiz/blob/master/images/screens/instructionsPage.png)
 3. Quiz Page
-![Quiz Page](https://github.com/tanya1810/EDC-Quiz/blob/master/images/screens/quizPage.png)
+![Quiz Page](https://github.com/UshasriMavuri1999/EDC-Quiz/blob/master/images/screens/quizPage.png)
 4. Thank Page
-![Thank Page](https://github.com/tanya1810/EDC-Quiz/blob/master/images/screens/thankPage.png)
+![Thank Page](https://github.com/UshasriMavuri1999/EDC-Quiz/blob/master/images/screens/thankPage.png)
 
 ### Contributors
 - [Tanya](https://github.com/tanya1810)
