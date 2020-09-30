@@ -27,6 +27,26 @@ Want to improve your core Web Develoment skills?😉 Want to improve your knowle
   - Quiz page
   - Result Page
 
+Contents of the Webpage
+
+1. index.html
+2. Instructions.html
+3. Login.html
+4. ThankYou.html
+5. css
+    - button.css
+    - simple-sidebar.css
+6. images
+    - screenshots
+    - logo
+    - social icons
+7. vendor
+    - bootstarp
+    - jquery
+8. style.css
+9. login_styles.css
+10. readme.md
+
 ## Installation
 
 You can download the code through either:
