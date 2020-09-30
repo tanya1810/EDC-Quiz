@@ -1,5 +1,13 @@
 # EDC-Quiz 😇
 
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/tanya1810/badges/)
+![GitHub stars](https://img.shields.io/github/stars/tanya1810/EDC-Quiz?style=social)
+![GitHub forks](https://img.shields.io/github/forks/tanya1810/EDC-Quiz?style=social)
+[![GitHub contributors](https://img.shields.io/github/contributors/tanya1810/EDC-Quiz.svg)](https://GitHub.com/tanya1810/EDC-Quiz/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/tanya1810/EDC-Quiz.svg)](https://GitHub.com/tanya1810/EDC-Quiz/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/tanya1810/EDC-Quiz.svg)](https://GitHub.com/tanya1810/EDC-Quiz/pull/)
+![Hacktoberfest2020](https://img.shields.io/github/hacktoberfest/2020/badges/shields?label=hacktoberfest%202020)
+
 Building a Quiz App with HTML, CSS, and JavaScript to improve your Core Web Development skills.
 
 Want to improve your core Web Develoment skills?😉 Want to improve your knowledge of HTML, CSS, and JavaScript? In this repository, I'm going to build a Quiz application without the assistance of libraries or frameworks.
